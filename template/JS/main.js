@@ -5,10 +5,10 @@ sup=`
         <a href="./index.html"><h1 class="h-h1">BookMatch</h1></a>
     </div>
     <div class="col-sm-12 col-m-12 col-12">
-        <a href="./index.html"><div class="h-a col-3 col-m-3 col-sm-12">Home</div></a>
-        <a href="./who.html"><div class="h-a col-3 col-m-3 col-sm-12">Quienes somos</div></a>
-        <a href="./books.html"><div class="h-a col-3 col-m-3 col-sm-12">Libros</div></a>
-        <a href="./thanks.html"><div class="h-a col-3 col-m-3 col-sm-12">Agradecimientos</div></a>
+        <a href="./index.html"><div class="h-a col-3 col-m-2 col-sm-12">Home</div></a>
+        <a href="./who.html"><div class="h-a col-3 col-m-4 col-sm-12">Quienes somos</div></a>
+        <a href="./books.html"><div class="h-a col-3 col-m-2 col-sm-12">Libros</div></a>
+        <a href="./thanks.html"><div class="h-a col-3 col-m-4 col-sm-12">Agradecimientos</div></a>
     </div>
 </div>
 </header>

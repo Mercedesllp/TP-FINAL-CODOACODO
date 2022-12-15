@@ -2,16 +2,13 @@
     margin: 0;
     padding:0;
     box-sizing: border-box;
+    /*background-color: #DE834D;*/
 }
-a, a:hover{
+a{
     text-decoration-line: none;
-    color: #F0D290;
 }
 li{
     list-style: none;
-}
-main{
-    background-color: #DE834D;
 }
 
 /*Header*/
@@ -24,10 +21,12 @@ main{
 }
 .h-h1{
     font-style: italic;
+    color: #F0D290;
+    animation: fadeIn 3s;
 }
 .h-a{
     color: #F0D290;
-    font-size:larger;
+    font-size:1.4em;
 }
 .h-a:hover, .h-a:active{
     background-color:#A3423C;
@@ -53,15 +52,56 @@ footer{
 }
 .f-icons{
     position: fixed;
-    right: 0;  bottom: 0;
+    right: 0; bottom: 0;
     padding: 1em 0.7em;
 }
 .f-icon{
     padding: 0em 0.3em;
 }
 
-/*Home*/
+/*main*/
+[class*="h4-"]{font-size:2em;}
+[class*="p-"]{font-size:1.4em;}
+[class*="box1-"]{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: #F0D290;
+}
+[class*="txt-"]{
+    color: #781D42;
+}
+.pa-m, .pa-m:hover{
+    color: #781D42; 
+    text-decoration-line: underline;
+}
 
+/*Home*/
+.txt-mh{
+    padding: 3.5em 2em;
+}
+
+/*Who*/
+.txt-mw{
+    padding: 5em 2em;
+}
+
+/*Thanks*/
+.txt-mt{
+    padding: 2em 1em;
+}
+.h2-mt{
+    color: #F0D290;
+    background-color: #DE834D;
+    font-size: 3em;
+    padding: 0.5em 0em 0.5em;
+}
+.h4-mt{padding: 0.5em 0em;}
+
+/*Animations*/
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
 
 /*media queris*/
 [class*="col-"]{
@@ -87,7 +127,7 @@ footer{
     /*footer*/
     .f-imgCaC{padding: 2.5em 0em 0em;}
     /*main*/
-    main{padding: 15em 2em; }
+    [class*="box1-"]{padding: 10em 0em 0em; }
 }
 @media only screen and (max-width: 992px){
     .col-m-1 {width : 8.33%;} 
@@ -109,7 +149,7 @@ footer{
     /*footer*/
     .f-imgCaC{padding: 2.5em 0em 0em;}
     /*main*/
-    main{padding: 15em 2em; }
+    [class*="box1-"]{padding: 9em 0em 0em; }
 }
 @media only screen and (max-width: 600px){
     .col-sm-1 {width : 8.33%;} 
@@ -130,5 +170,5 @@ footer{
     /*footer*/
     .f-imgCaC{padding: 1em 0em 2em;}
     /*main*/
-    main{padding: 20em 2em; }
+    [class*="box1-"]{padding: 18em 0em 0em; }
 }
