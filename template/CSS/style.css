@@ -2,14 +2,9 @@
     margin: 0;
     padding:0;
     box-sizing: border-box;
-    /*background-color: #DE834D;*/
 }
-a{
-    text-decoration-line: none;
-}
-li{
-    list-style: none;
-}
+a{text-decoration-line: none;}
+li{list-style: none;}
 
 /*Header*/
 .h-box{
@@ -62,7 +57,7 @@ footer{
 /*main*/
 [class*="h4-"]{font-size:2em;}
 [class*="p-"]{font-size:1.4em;}
-[class*="box1-"]{
+[class*="box1-"], [class*="box2-"] {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     background-color: #F0D290;
@@ -97,6 +92,56 @@ footer{
 }
 .h4-mt{padding: 0.5em 0em;}
 
+/*Books*/
+.add-mb{
+    color: #781D42;
+    padding: 2em 0em 0em;
+}
+/*cards of books*/
+.p-mb{font-size: 1em;}
+.mb-cards{
+    background-color:#F0D290;
+    padding: 1em 1em 5em;
+}
+.mb-img{
+    height: 300px;
+    object-fit: cover;
+    width:90%;
+}
+.box2-mb{
+    margin: 1em ;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: #DE834D;
+}
+.box2-mb:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+.txt-mb{
+    text-align: left;
+    padding: 2em;
+    height: 390px;
+    position: relative;
+}
+.btns-mb{
+    position:absolute;
+    bottom: 20px; left: 20px; right: 20px; 
+}
+.btn-mb{
+    color: #DE834D;
+    font-weight: bold;
+    background-color: #781D42;
+    padding: 3px 6px;
+    border: 2px solid #DE834D;
+    border-radius: 4px;
+}
+.btn-mb:hover, .btn-mb:active{
+    font-weight: bold;
+    background-color: #DE834D;
+    color: #781D42;
+    border: 2px solid #781D42;
+}
+
 /*Animations*/
 @keyframes fadeIn {
     0% { opacity: 0; }
@@ -127,7 +172,12 @@ footer{
     /*footer*/
     .f-imgCaC{padding: 2.5em 0em 0em;}
     /*main*/
-    [class*="box1-"]{padding: 10em 0em 0em; }
+    [class*="box1-"]{padding: 10em 0em 0em;}
+    /*Books*/
+    .mb-cards{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
 }
 @media only screen and (max-width: 992px){
     .col-m-1 {width : 8.33%;} 
@@ -149,7 +199,12 @@ footer{
     /*footer*/
     .f-imgCaC{padding: 2.5em 0em 0em;}
     /*main*/
-    [class*="box1-"]{padding: 9em 0em 0em; }
+    [class*="box1-"]{padding: 9em 0em 0em;}
+    /*Books*/
+    .mb-cards{
+        display: grid;
+        grid-template-columns: 100%;
+    }
 }
 @media only screen and (max-width: 600px){
     .col-sm-1 {width : 8.33%;} 
@@ -170,5 +225,5 @@ footer{
     /*footer*/
     .f-imgCaC{padding: 1em 0em 2em;}
     /*main*/
-    [class*="box1-"]{padding: 18em 0em 0em; }
+    [class*="box1-"]{padding: 18em 0em 0em;}
 }
